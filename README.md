@@ -1,9 +1,9 @@
 HR Management System
-A comprehensive web-based Human Resources (HR) management system built using PHP (likely Laravel).
-
 &lt;p align="center">
 &lt;img src="[suspicious link removed]" alt="HR Management System Banner">
 &lt;/p>
+
+A comprehensive web-based Human Resources (HR) management system built using PHP (likely Laravel).
 
 This system provides a comprehensive suite of tools for HR administrators to manage employees, track attendance, handle leave requests, and oversee various organizational activities. It also includes API endpoints, suggesting the possibility of mobile or other external application integrations.
 
