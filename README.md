@@ -1,55 +1,55 @@
-HR Management System
-&lt;p align="center">
-&lt;img src="[suspicious link removed]" alt="HR Management System Banner">
-&lt;/p>
+# HR Management System
 
-A comprehensive web-based Human Resources (HR) management system built using PHP (likely Laravel).
+<p align="center">
+  <img src="https://your-cdn.com/your-banner.png" alt="HR Management System Banner" width="800"/>
+</p>
 
-This system provides a comprehensive suite of tools for HR administrators to manage employees, track attendance, handle leave requests, and oversee various organizational activities. It also includes API endpoints, suggesting the possibility of mobile or other external application integrations.
+[![Laravel](https://img.shields.io/badge/Laravel-%5E10-red)](https://laravel.com) [![PHP](https://img.shields.io/badge/PHP-%5E8.1-blue)](https://www.php.net) [![Tailwind](https://img.shields.io/badge/Tailwind–CSS-%5E3-green)](https://tailwindcss.com)
 
-⚙️ Key Features and Functionalities
-(deduced from the code)
+A **comprehensive**, web-based Human Resources management platform built on Laravel. Streamline employee data, attendance, leaves, projects, tasks, roles/permissions, notices, reports, API integrations, and more.
 
-👤 Employee Management
-Handles employee data with functionalities for creating, retrieving, updating, and potentially archiving records.
-Relevant files: app/Http/Controllers/Web/UserController.php, app/Http/Controllers/Api/UserProfileApiController.php, app/Models/User.php
-⏱️ Attendance Tracking
-Features for tracking employee attendance, including clock-in/clock-out, reports, and potential corrections.
-Relevant files: app/Http/Controllers/Web/AttendanceController.php, app/Http/Controllers/Api/AttendanceApiController.php, app/Models/Attendance.php
-🗓️ Leave Management
-Supports leave requests and management, allowing employees to apply and administrators to review/approve/reject.
-Relevant files: app/Http/Controllers/Web/LeaveController.php, app/Http/Controllers/Api/LeaveApiController.php, app/Models/LeaveRequestMaster.php, app/Models/LeaveType.php
-📂 Project Management
-Modules for project creation, employee assignment, task management, and progress tracking.
-Relevant files: app/Http/Controllers/Web/ProjectController.php, app/Http/Controllers/Api/ProjectApiController.php, app/Models/Project.php, app/Models/Task.php
-✅ Task Management
-Allows for the creation and management of tasks with checklists, comments, and attachments.
-Relevant files: app/Http/Controllers/Web/TaskController.php, app/Http/Controllers/Api/TaskApiController.php, app/Models/TaskChecklist.php, app/Models/TaskComment.php, app/Models/Attachment.php
-🛡️ Role and Permission Management
-Includes a role-based permission system for defining roles and assigning specific permissions to users.
-Relevant files: app/Http/Controllers/Web/RoleController.php, app/Helpers/RolePermissionHelper.php, app/Models/Role.php, app/Models/Permission.php
-📢 Notice and Notification System
-Features for creating and managing internal communications through notices and notifications.
-Relevant files: app/Http/Controllers/Web/NoticeController.php, app/Http/Controllers/Web/NotificationController.php, app/Models/Notice.php, app/Models/Notification.php
-📊 Reporting and Data Export
-Functionalities to generate and export reports for attendance, employee data, etc.
-Relevant files: app/Http/Controllers/Web/DataExportController.php, app/Exports/
-🌐 API Functionality
-Provides API endpoints for various functionalities, enabling mobile app or other system integrations.
-Relevant directory: app/Http/Controllers/Api/
-⚙️ General Settings
-Administrators can configure various system settings.
-Relevant files: app/Http/Controllers/Web/GeneralSettingController.php, app/Models/GeneralSetting.php
-📞 Support/Ticket System
-Features for employees to submit support requests and administrators to manage them.
-Relevant files: app/Http/Controllers/Web/SupportController.php, app/Models/Support.php
-✈️ TADA Management
-Functionality to manage Travel Allowance and Daily Allowance.
-Relevant files: app/Http/Controllers/Web/TadaController.php, app/Models/Tada.php
-🤝 Team Meetings
-Supports scheduling and managing team meetings.
-Relevant files: app/Http/Controllers/Web/TeamMeetingController.php, app/Models/TeamMeeting.php
-🏢 Asset Management
-Functionality to manage company assets.
-Relevant files: app/Http/Controllers/Web/AssetController.php, app/Models/Asset.php
-In essence, this project delivers a robust digital platform designed to streamline and manage a wide array of HR-related operations and organizational workflows.
+## 🚀 Key Features
+
+- 👤 **Employee Management**  
+  Create / Read / Update / Archive employee profiles  
+- ⏱️ **Attendance Tracking**  
+  Clock-in / Clock-out, corrections, daily & monthly reports  
+- 🗓️ **Leave Management**  
+  Submission & approval workflows, configurable leave types  
+- 📂 **Project & Task Management**  
+  Projects → assign teams → tasks → checklists, comments, attachments  
+- 🛡️ **Role & Permission**  
+  Fine-grained, role-based access control via policies & middleware  
+- 📢 **Notices & Notifications**  
+  Internal announcements + real-time alerts  
+- 📊 **Reporting & Export**  
+  CSV/Excel exports for attendance, headcounts, project progress  
+- 🌐 **API Endpoints**  
+  Full CRUD for employees, attendance, leaves, projects, tasks…  
+- ⚙️ **General Settings**  
+  Tweak system behaviour, leave quotas, notification templates  
+- 📞 **Support / Ticket System**  
+  Issue submission and admin resolution dashboard  
+- ✈️ **TADA Management**  
+  Travel & Daily Allowance requests with approval flows  
+- 🤝 **Team Meetings**  
+  Schedule meetings, send invites, track attendance  
+- 🏢 **Asset Management**  
+  Assign, return, decommission company assets
+
+## 📦 Tech Stack
+
+- **Backend:** PHP 8.1+, Laravel 10  
+- **Database:** MySQL / MariaDB  
+- **Frontend:** Tailwind CSS, Alpine.js (optional)  
+- **Authentication:** Laravel Breeze / Jetstream  
+- **Exports:** Laravel-Excel  
+- **API Docs:** Laravel-Swagger (optional)  
+
+## 🔧 Installation
+
+1. **Clone**  
+   ```bash
+   git clone https://github.com/yourusername/hr-management-system.git
+   cd hr-management-system
+
